@@ -101,7 +101,7 @@ namespace Relief.Controllers
         }
 
                 
-        [HttpGet("GetCommentByNgoId/{id}")]
+        [HttpGet("GetCommentByCharityHomeId/{id}")]
         public async Task<IActionResult> GetCommentByCharityHomeId([FromRoute] int id)
         {
             var comment = await _commentService.GetCommentByCharityHomeId(id);

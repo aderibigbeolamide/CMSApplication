@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/fullstackbeast/Desktop/NewProject/CMSApp/CMSApp.csproj": {}
+    "/home/fullstackbeast/Desktop/NewProject/CMSApplication/CMSApp.csproj": {}
   },
   "projects": {
-    "/home/fullstackbeast/Desktop/NewProject/CMSApp/CMSApp.csproj": {
+    "/home/fullstackbeast/Desktop/NewProject/CMSApplication/CMSApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/fullstackbeast/Desktop/NewProject/CMSApp/CMSApp.csproj",
+        "projectUniqueName": "/home/fullstackbeast/Desktop/NewProject/CMSApplication/CMSApp.csproj",
         "projectName": "CMSApp",
-        "projectPath": "/home/fullstackbeast/Desktop/NewProject/CMSApp/CMSApp.csproj",
+        "projectPath": "/home/fullstackbeast/Desktop/NewProject/CMSApplication/CMSApp.csproj",
         "packagesPath": "/home/fullstackbeast/.nuget/packages/",
-        "outputPath": "/home/fullstackbeast/Desktop/NewProject/CMSApp/obj/",
+        "outputPath": "/home/fullstackbeast/Desktop/NewProject/CMSApplication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/fullstackbeast/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -48,6 +52,14 @@
               "target": "Package",
               "version": "[7.0.2, )"
             },
+            "Microsoft.Owin.Host.SystemWeb": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Security.Jwt": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -55,6 +67,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.27.0, )"
             },
             "sib_api_v3_sdk": {
               "target": "Package",

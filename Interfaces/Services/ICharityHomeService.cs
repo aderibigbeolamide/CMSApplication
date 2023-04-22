@@ -8,6 +8,7 @@ namespace CMSApp.Interfaces.Services
         Task<BaseResponse> Register(CreateCharityHomeRequestModel model);
         Task<BaseResponse> Update(UpdateCharityHomeRequestModel model, int id);
         Task<CharityHomesResponseModel> GetAll();
+        Task<CharityHomesResponseModel> GetAllWithCategory();
         Task<int> GetAllCount();
         Task<CharityHomesResponseModel> GetBannedCharityHomes();
         Task<CharityHomeResponseModel> GetCharityHome(int id);

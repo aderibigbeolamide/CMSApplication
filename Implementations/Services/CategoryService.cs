@@ -6,7 +6,7 @@ using CMSApp.Interfaces.Repositories;
 using CMSAppTOs;
 using CMSApp.DTOs;
 
-namespace Relief.Implementations.Services
+namespace CMSApp.Implementations.Services
 {
     public class CategoryService : ICategoryService
     {
