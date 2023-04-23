@@ -1,6 +1,8 @@
-namespace CMSApp.Entities
+using CMSApplication.Contracts;
+
+namespace CMSApplication.Entities
 {
-    public class In_appMessaging
+    public class In_appMessaging : AuditableEntity
     {
         public int Id { get; set; }
         public string Title { get; set; }

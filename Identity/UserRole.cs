@@ -1,6 +1,6 @@
-﻿using CMSApp.Contracts;
+﻿using CMSApplication.Contracts;
 
-namespace CMSApp.Identity
+namespace CMSApplication.Identity
 {
     public class UserRole : AuditableEntity
     {

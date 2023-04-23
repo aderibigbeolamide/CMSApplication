@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using CMSApp.DTOs;
-using CMSApp.Interfaces.Services;
-using Relief.Authentication;
+using CMSApplication.DTOs;
+using CMSApplication.Interfaces.Services;
+using CMSApplication.Authentication;
 
-namespace Relief.Controllers
+namespace CMSApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

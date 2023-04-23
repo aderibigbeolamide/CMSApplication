@@ -1,5 +1,5 @@
-using CMSApp.DTOs.RequestModel;
-using CMSApp.Interfaces.Services;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CMSApplication.Controllers

@@ -4,12 +4,11 @@ using CMSApplication.Interfaces.Repositories;
 
 namespace CMSApplication.Implementations.Repositories
 {
-    public class PaymentRepository : BaseRepository<Payment>, IPaymentRepository
+    public class CreateUserRepository : BaseRepository<CreateUser>, ICreateUserRepository
     {
-        public PaymentRepository(ApplicationContext context)
+        public CreateUserRepository(ApplicationContext context)
         {
             _context = context;
         }
-
     }
 }

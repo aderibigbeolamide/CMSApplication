@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CMSApp.Contexts;
-using CMSApp.Entities;
-using CMSApp.Interfaces.Repositories;
+using CMSApplication.Contexts;
+using CMSApplication.Entities;
+using CMSApplication.Interfaces.Repositories;
 
-namespace CMSApp.Implementations.Repositories
+namespace CMSApplication.Implementations.Repositories
 {
     public class CommentRepository : BaseRepository<Comment>, ICommentRepository
     {

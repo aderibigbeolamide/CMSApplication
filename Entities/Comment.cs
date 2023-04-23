@@ -1,6 +1,6 @@
-using CMSApp.Contracts;
+using CMSApplication.Contracts;
 
-namespace CMSApp.Entities
+namespace CMSApplication.Entities
 {
      public class Comment : AuditableEntity // donors comments on Charities
     {

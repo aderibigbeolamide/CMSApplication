@@ -1,4 +1,4 @@
-﻿namespace CMSApp.DTOs
+﻿namespace CMSApplication.DTOs
 {
     public class Receipt
     {

@@ -1,11 +1,11 @@
-﻿using CMSApp.DTOs;
+﻿using CMSApplication.DTOs;
 using Microsoft.IdentityModel.Tokens;
-using Relief.Authentication;
+using CMSApplication.Authentication;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace CMSApp.Authentication
+namespace CMSApplication.Authentication
 {
     public class JWTAuthentication : IJWTAuthentication
     {

@@ -1,6 +1,6 @@
-﻿using CMSApp.Entities;
+﻿using CMSApplication.Entities;
 
-namespace CMSApp.DTOs.RequestModel
+namespace CMSApplication.DTOs.RequestModel
 {
     public class DonationRequestModel
     {

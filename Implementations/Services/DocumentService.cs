@@ -1,9 +1,9 @@
-﻿using CMSApp.DTOs.ResponseModel;
-using CMSApp.Entities;
-using CMSApp.Interfaces.Repositories;
-using CMSApp.Interfaces.Services;
+﻿using CMSApplication.DTOs.ResponseModel;
+using CMSApplication.Entities;
+using CMSApplication.Interfaces.Repositories;
+using CMSApplication.Interfaces.Services;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class DocumentService : IDocumentService
     {

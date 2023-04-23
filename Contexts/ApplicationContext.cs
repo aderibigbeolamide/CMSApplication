@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CMSApp.Entities;
-using CMSApp.Identity;
+using CMSApplication.Entities;
+using CMSApplication.Identity;
 
-namespace CMSApp.Contexts
+namespace CMSApplication.Contexts
 {
     public class ApplicationContext : DbContext
     {

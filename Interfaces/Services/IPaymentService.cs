@@ -1,8 +1,8 @@
-﻿using CMSApp.DTOs;
-using CMSApp.DTOs.RequestModel;
-using CMSApp.DTOs.ResponseModel;
+﻿using CMSApplication.DTOs;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.DTOs.ResponseModel;
 
-namespace CMSApp.Interfaces.Services
+namespace CMSApplication.Interfaces.Services
 {
     public interface IPaymentService
     {

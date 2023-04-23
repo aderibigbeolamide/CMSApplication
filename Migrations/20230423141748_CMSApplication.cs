@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace CMSApp.Migrations
 {
     /// <inheritdoc />
-    public partial class CMSApp : Migration
+    public partial class CMSApplication : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -131,7 +131,14 @@ namespace CMSApp.Migrations
                     IsDismissible = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     CharityHomeId = table.Column<int>(type: "int", nullable: false),
                     CampaignId = table.Column<string>(type: "varchar(255)", nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    DeletedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    DeletedBy = table.Column<int>(type: "int", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    CreatedBy = table.Column<int>(type: "int", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    LastModifiedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    LastModifiedBy = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -328,10 +335,10 @@ namespace CMSApp.Migrations
                     DeletedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     DeletedBy = table.Column<int>(type: "int", nullable: false),
                     IsDeleted = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
                     CreatedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     LastModifiedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: true)
+                    UserId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -340,7 +347,8 @@ namespace CMSApp.Migrations
                         name: "FK_CharityHomes_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_CharityHomes_Users_UserId",
                         column: x => x.UserId,
@@ -359,6 +367,7 @@ namespace CMSApp.Migrations
                     Time = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     IsApproved = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     DonorId = table.Column<int>(type: "int", nullable: false),
+                    IsAccomplished = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     CharityHomeId = table.Column<int>(type: "int", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     DeletedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
@@ -462,7 +471,14 @@ namespace CMSApp.Migrations
                     Venue = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     EventDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    CharityHomeId = table.Column<int>(type: "int", nullable: false)
+                    CharityHomeId = table.Column<int>(type: "int", nullable: false),
+                    DeletedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    DeletedBy = table.Column<int>(type: "int", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    CreatedBy = table.Column<int>(type: "int", nullable: false),
+                    CreatedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    LastModifiedOn = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    LastModifiedBy = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

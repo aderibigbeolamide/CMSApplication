@@ -1,6 +1,4 @@
-using CMSAppTOs;
-
-namespace CMSApp.DTOs
+namespace CMSApplication.DTOs
 {
     public class VolunteerDTO
     {

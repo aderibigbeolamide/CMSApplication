@@ -1,6 +1,6 @@
-﻿using CMSApp.DTOs;
+﻿using CMSApplication.DTOs;
 
-namespace CMSAppTOs
+namespace CMSApplication.DTOs
 {
     public class CategoryDTO
     {

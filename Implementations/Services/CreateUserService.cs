@@ -1,12 +1,12 @@
-﻿using CMSApp.DTOs;
-using CMSApp.DTOs.RequestModel;
-using CMSApp.DTOs.ResponseModel;
-using CMSApp.Email;
-using CMSApp.Entities;
-using CMSApp.Interfaces.Repositories;
-using CMSApp.Interfaces.Services;
+﻿using CMSApplication.DTOs;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.DTOs.ResponseModel;
+using CMSApplication.Email;
+using CMSApplication.Entities;
+using CMSApplication.Interfaces.Repositories;
+using CMSApplication.Interfaces.Services;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class CreateUserService : ICreateUserService
     {
@@ -211,6 +211,5 @@ namespace CMSApp.Implementations.Services
                 Message = "Email not found"
             };
         }
-
     }
 }

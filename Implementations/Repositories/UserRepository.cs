@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CMSApp.Contexts;
-using CMSApp.Identity;
-using CMSApp.Interfaces.Repositories;
+using CMSApplication.Contexts;
+using CMSApplication.Identity;
+using CMSApplication.Interfaces.Repositories;
 using System.Linq.Expressions;
 
-namespace CMSApp.Implementations.Repositories
+namespace CMSApplication.Implementations.Repositories
 {
     public class UserRepository : BaseRepository<User>, IUserRepository
     {

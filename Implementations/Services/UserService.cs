@@ -1,11 +1,11 @@
-﻿using CMSApp.DTOs;
-using CMSApp.Interfaces.Services;
-using CMSApp.Interfaces.Repositories;
+﻿using CMSApplication.DTOs;
+using CMSApplication.Interfaces.Services;
+using CMSApplication.Interfaces.Repositories;
 using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class UserService : IUserService
     {

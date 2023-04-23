@@ -1,6 +1,6 @@
-﻿using CMSApp.DTOs.ResponseModel;
+﻿using CMSApplication.DTOs.ResponseModel;
 
-namespace CMSApp.Interfaces.Services
+namespace CMSApplication.Interfaces.Services
 {
     public interface IDocumentService
     {

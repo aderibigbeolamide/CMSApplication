@@ -1,7 +1,7 @@
-﻿using CMSApp.DTOs;
-using CMSApp.Entities;
+﻿using CMSApplication.DTOs;
+using CMSApplication.Entities;
 
-namespace CMSApp.Interfaces.Repositories
+namespace CMSApplication.Interfaces.Repositories
 {
     public interface IDocumentRepository : IRepository<Document>
     {

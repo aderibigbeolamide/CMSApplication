@@ -1,4 +1,4 @@
-﻿namespace CMSApp.Email
+﻿namespace CMSApplication.Email
 {
     public interface IEmailSender
     {

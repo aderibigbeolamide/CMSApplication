@@ -1,7 +1,7 @@
-﻿using CMSApp.Identity;
+﻿using CMSApplication.Identity;
 using System.Linq.Expressions;
 
-namespace CMSApp.Interfaces.Repositories
+namespace CMSApplication.Interfaces.Repositories
 {
     public interface IUserRepository : IRepository<User>
     {

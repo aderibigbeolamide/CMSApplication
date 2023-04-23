@@ -1,4 +1,4 @@
-﻿namespace CMSApp.Entities
+﻿namespace CMSApplication.Entities
 {
     public class CreateUser
     {

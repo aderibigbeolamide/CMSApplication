@@ -1,6 +1,6 @@
-using CMSApp.Identity;
+using CMSApplication.Identity;
 
-namespace CMSApp.Entities
+namespace CMSApplication.Entities
 {
      public class Donor : BaseUser
     {

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace CMSApp.Interfaces.Repositories
+namespace CMSApplication.Interfaces.Repositories
 {
     public interface IRepository<T>
     {

@@ -1,21 +1,21 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using CMSApp.DTOs.RequestModel;
-using CMSApp.Entities;
-using CMSApp.Interfaces.Repositories;
-using CMSApp.Interfaces.Services;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.Entities;
+using CMSApplication.Interfaces.Repositories;
+using CMSApplication.Interfaces.Services;
 
-namespace Relief.Controllers
+namespace CMSApplication.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class NgoController : ControllerBase
+    public class CharityHomeController : ControllerBase
     {
         private readonly ICharityHomeService _charityHomeService;
         private readonly IDocumentRepository _documentRepository;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public NgoController(ICharityHomeService charityHomeservice, IDocumentRepository documentRepository, IWebHostEnvironment webHostEnvironment)
+        public CharityHomeController(ICharityHomeService charityHomeservice, IDocumentRepository documentRepository, IWebHostEnvironment webHostEnvironment)
         {
             _charityHomeService = charityHomeservice;
             _documentRepository = documentRepository;

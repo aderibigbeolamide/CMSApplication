@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using CMSApp.Contexts;
-using CMSApp.Contracts;
-using CMSApp.Interfaces.Repositories;
+using CMSApplication.Contexts;
+using CMSApplication.Contracts;
+using CMSApplication.Interfaces.Repositories;
 using System.Linq.Expressions;
 
-namespace CMSApp.Implementations.Repositories
+namespace CMSApplication.Implementations.Repositories
 {
     public class BaseRepository<T> : IRepository<T> where T : class
     {

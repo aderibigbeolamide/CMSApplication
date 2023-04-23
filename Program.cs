@@ -1,10 +1,11 @@
 using System.Text;
-using CMSApp.Authentication;
-using CMSApp.Contexts;
-using CMSApp.Implementations.Repositories;
-using CMSApp.Implementations.Services;
-using CMSApp.Interfaces.Repositories;
-using CMSApp.Interfaces.Services;
+using CMSApplication.Authentication;
+using CMSApplication.Contexts;
+using CMSApplication.Email;
+using CMSApplication.Implementations.Repositories;
+using CMSApplication.Implementations.Services;
+using CMSApplication.Interfaces.Repositories;
+using CMSApplication.Interfaces.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -24,7 +25,9 @@ builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IVolunteerRepository, VolunteerRepository>();
 builder.Services.AddScoped<ICampaignRepository, CampaignRepository>();
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICreateUserRepository, CreateUserRepository>();
 builder.Services.AddScoped<IDonorRepository, DonorRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<ICharityHomeRepository, CharityHomeRepository>();
@@ -33,7 +36,7 @@ builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IIn_appMessagingRepository, In_appMesagingRepository>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
-
+builder.Services.AddScoped<IEmailSender, EmailSender>();
 //Services
 builder.Services.AddScoped<IAdminService, AdminService>();
 builder.Services.AddScoped<IUserService, UserService>();

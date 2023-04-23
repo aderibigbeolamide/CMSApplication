@@ -1,7 +1,7 @@
-﻿using CMSApp.Contracts;
-using CMSApp.Entities;
+﻿using CMSApplication.Contracts;
+using CMSApplication.Entities;
 
-namespace CMSApp.Identity
+namespace CMSApplication.Identity
 {
     public class User : AuditableEntity
     {

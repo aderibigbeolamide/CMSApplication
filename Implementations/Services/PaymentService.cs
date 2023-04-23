@@ -1,14 +1,14 @@
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
-using CMSApp.DTOs;
-using CMSApp.DTOs.RequestModel;
-using CMSApp.DTOs.ResponseModel;
-using CMSApp.Entities;
-using CMSApp.Interfaces.Repositories;
-using CMSApp.Interfaces.Services;
+using CMSApplication.DTOs;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.DTOs.ResponseModel;
+using CMSApplication.Entities;
+using CMSApplication.Interfaces.Repositories;
+using CMSApplication.Interfaces.Services;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class PaymentService : IPaymentService
     {

@@ -1,8 +1,8 @@
-﻿using CMSApp.DTOs.RequestModel;
-using CMSApp.DTOs.ResponseModel;
-using CMSApp.Entities;
+﻿using CMSApplication.DTOs.RequestModel;
+using CMSApplication.DTOs.ResponseModel;
+using CMSApplication.Entities;
 
-namespace CMSApp.Interfaces.Services
+namespace CMSApplication.Interfaces.Services
 {
     public interface IAdminService
     {

@@ -1,6 +1,6 @@
-﻿using CMSAppTOs;
+﻿using CMSApplication.DTOs;
 
-namespace CMSApp.DTOs.ResponseModel
+namespace CMSApplication.DTOs.ResponseModel
 {
     public class CategoryResponseModel : BaseResponse
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CMSApp.DTOs.RequestModel
+namespace CMSApplication.DTOs.RequestModel
 {
     public class AdminRequestModel
     {

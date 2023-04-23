@@ -1,6 +1,6 @@
-﻿using CMSApp.DTOs;
+﻿using CMSApplication.DTOs;
 
-namespace Relief.Authentication
+namespace CMSApplication.Authentication
 {
     public interface IJWTAuthentication
     {

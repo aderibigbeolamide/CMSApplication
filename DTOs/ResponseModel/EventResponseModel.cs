@@ -1,4 +1,4 @@
-namespace CMSApp.DTOs.ResponseModel
+namespace CMSApplication.DTOs.ResponseModel
 {
     public class EventResponseModel : BaseResponse
     {

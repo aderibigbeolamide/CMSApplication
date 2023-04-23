@@ -1,14 +1,14 @@
-﻿using CMSApp.DTOs;
-using CMSApp.DTOs.RequestModel;
-using CMSApp.DTOs.ResponseModel;
-using CMSApp.Entities;
-using CMSApp.Email;
-using CMSApp.Interfaces.Services;
-using CMSApp.Interfaces.Repositories;
+﻿using CMSApplication.DTOs;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.DTOs.ResponseModel;
+using CMSApplication.Entities;
+using CMSApplication.Email;
+using CMSApplication.Interfaces.Services;
+using CMSApplication.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
-using CMSApp.Identity;
+using CMSApplication.Identity;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class CharityHomeService : ICharityHomeService
     {

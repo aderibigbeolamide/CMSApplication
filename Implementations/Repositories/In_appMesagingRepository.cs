@@ -1,8 +1,9 @@
-using CMSApp.Contexts;
-using CMSApp.Entities;
-using CMSApp.Interfaces.Repositories;
+using CMSApplication.Contexts;
+using CMSApplication.Entities;
+using CMSApplication.Interfaces.Repositories;
+using Microsoft.EntityFrameworkCore;
 
-namespace CMSApp.Implementations.Repositories
+namespace CMSApplication.Implementations.Repositories
 {
     public class In_appMesagingRepository : BaseRepository<In_appMessaging>, IIn_appMessagingRepository
     {
@@ -11,9 +12,10 @@ namespace CMSApp.Implementations.Repositories
             _context = context;
         }
 
-        public Task<IList<In_appMessaging>> GetAll()
+        public async Task<IList<In_appMessaging>> GetAll()
         {
-            throw new NotImplementedException();
+            var in_appMessaging = await _context.In_AppMessagings.Where(x => x.IsDeleted == false).ToListAsync();
+            return in_appMessaging;
         }
 
         public Task<In_appMessaging> GetIn_AppMessagingByCharityHome(string Name)

@@ -1,11 +1,11 @@
-﻿using CMSApp.DTOs;
-using CMSApp.DTOs.RequestModel;
-using CMSApp.DTOs.ResponseModel;
-using CMSApp.Entities;
-using CMSApp.Interfaces.Services;
-using CMSApp.Interfaces.Repositories;
+﻿using CMSApplication.DTOs;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.DTOs.ResponseModel;
+using CMSApplication.Entities;
+using CMSApplication.Interfaces.Repositories;
+using CMSApplication.Interfaces.Services;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class CommentService : ICommentService
     {
@@ -82,7 +82,6 @@ namespace CMSApp.Implementations.Services
             };
 
         }
-
         public async Task<CommentsResponseModel> GetAll()
         {
             var list = await _commentRepository.GetAll();

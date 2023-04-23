@@ -3,9 +3,9 @@ using sib_api_v3_sdk.Api;
 using sib_api_v3_sdk.Client;
 using sib_api_v3_sdk.Model;
 
-namespace CMSApp.Email
+namespace CMSApplication.Email
 {
-    public class EmailSender
+    public class EmailSender : IEmailSender
     {
         private readonly IConfiguration _configuration;
         public EmailSender(IConfiguration configuration)

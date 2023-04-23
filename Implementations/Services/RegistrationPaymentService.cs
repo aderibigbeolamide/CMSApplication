@@ -1,6 +1,6 @@
-﻿using CMSApp.Interfaces.Services;
+﻿using CMSApplication.Interfaces.Services;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class RegistrationPaymentService : IRegistrationPaymentService
     {

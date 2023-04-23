@@ -1,13 +1,13 @@
-﻿using CMSApp.DTOs;
-using CMSApp.DTOs.RequestModel;
-using CMSApp.DTOs.ResponseModel;
-using CMSApp.Entities;
-using CMSApp.Identity;
-using CMSApp.Email;
-using CMSApp.Interfaces.Services;
-using CMSApp.Interfaces.Repositories;
+﻿using CMSApplication.DTOs;
+using CMSApplication.DTOs.RequestModel;
+using CMSApplication.DTOs.ResponseModel;
+using CMSApplication.Entities;
+using CMSApplication.Identity;
+using CMSApplication.Email;
+using CMSApplication.Interfaces.Services;
+using CMSApplication.Interfaces.Repositories;
 
-namespace CMSApp.Implementations.Services
+namespace CMSApplication.Implementations.Services
 {
     public class DonorService : IDonorService
     {

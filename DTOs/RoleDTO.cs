@@ -1,6 +1,6 @@
-﻿using CMSApp.DTOs.ResponseModel;
+﻿using CMSApplication.DTOs.ResponseModel;
 
-namespace CMSApp.DTOs
+namespace CMSApplication.DTOs
 {
     public class RoleDTO
     {

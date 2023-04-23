@@ -1,6 +1,6 @@
-﻿using CMSApp.Entities;
+﻿using CMSApplication.Entities;
 
-namespace CMSApp.DTOs
+namespace CMSApplication.DTOs
 {
     public class CharityHomeDTO
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CMSApp.Contracts
+namespace CMSApplication.Contracts
 {
     public class AuditableEntity : BaseEntity, IAuditableEntity, ISoftDelete
     {

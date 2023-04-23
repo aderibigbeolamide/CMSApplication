@@ -1,8 +1,8 @@
-﻿using CMSApp.DTOs;
-using CMSApp.Entities;
+﻿using CMSApplication.DTOs;
+using CMSApplication.Entities;
 using System.Collections.Generic;
 
-namespace CMSApp.Interfaces.Repositories
+namespace CMSApplication.Interfaces.Repositories
 {
     public interface ICharityHomeRepository : IRepository<CharityHome>
     {
